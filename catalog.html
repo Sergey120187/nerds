@@ -19,7 +19,7 @@
             <a href="blank.html">Клиеты</a> 
           </li>
           <li>
-            <a href="catalog.html">Магазин</a> 
+            <a>Магазин</a> 
           </li>
           <li>
             <a href="blank.html">Контакты</a> 
@@ -34,7 +34,167 @@
 
       <section>
         <h2>Фильтр</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" max="150000" name="price"> 
+            <!-- Необходимо доделать!!! -->
+            <p>
+              <label>ОТ:
+                <input type="number" name="min" min="0" max="150000" placeholder="0">
+              </label>
+              <label>ДО:
+                <input type="number" name="max" min="0" max="150000" placeholder="150000">
+              </label>
+            </p>
+          </fieldset>
+            
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fix" id="fix">
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slider" checked id="slider">
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" checked id="news">
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="basket">
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        
+        <button type="submit">Показать</button>
+        </form>
       </section> 
+
+      <section>
+        <h2>Сортировка</h2>
+        <p>Сортировать:</p>
+        <ul>
+          <li><button type="button">По цене</button></li>
+          <li><button type="button">По типу</button></li>
+          <li><button type="button">По названию</button></li>
+        </ul>
+        <button type="button">По возрастанию</button>
+        <button type="button">По убыванию</button>
+      </section>
+
+      <section>
+        <h2>Список шаблонов</h2>
+        <ul>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>Sedona</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="Sedona">
+              </p>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 &#8381;</button>
+          </li>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>Pink app</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="Pink app">
+              </p>
+            </a>
+            <p>Продуктовый лендингприложения для iOS и Android</p>
+            <button type="button">9 900 &#8381;</button>
+          </li>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>Barbershop</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="Barbershop">
+              </p>
+            </a>
+            <p>Сайт салона красоты.Для мужчин, да.</p>
+            <button type="button">9 900 &#8381;</button>
+          </li>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>Mishka</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="Mishka">
+              </p>
+            </a>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <button type="button">9 900 &#8381;</button>
+          </li>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>A plus</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="A plus">
+              </p>
+            </a>
+            <p>Лендинг курсов повышения квалификации</p>
+              <button type="button">9 900 &#8381;</button>
+          </li>
+          <li>
+            <div class="browser">Браузер</div>
+            <a href="blank.html">
+              <h3>Кваст</h3>
+              <p>
+                <img src="https://via.placeholder.com/358x349" width="358" height="349" alt="Кваст">
+              </p>
+            </a>
+            <p>Промо-сайт производителякрафтового кваса</p>
+            <button type="button">9 900 &#8381;</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -73,6 +233,27 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
     </footer>
+
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>Ваше имя:
+            <input type="text" name="name" placeholder="Иия Фамилия">
+          </label>
+          <label>Ваш e-mail:
+            <input type="email" name="e-mail" placeholder="email@example.com ">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <textarea name="text" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
     </body>
 </html>
