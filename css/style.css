@@ -62,3 +62,33 @@ a {
 
 /* Header */
 
+.main-header {
+  background-color: var(--gallery);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: var(--chinabar);
+}
+
+.main-navigation a:active,
+.main-navigation img:hover {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+/* .main-navigation img:hover {
+  opacity: 0.3;
+} */
+
+.site-navigation {
+  list-style: none;
+}
