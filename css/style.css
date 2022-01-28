@@ -1,0 +1,64 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto"),
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");  
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");  
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");  
+}
+
+/* Variables */
+
+:root {
+  --black: #000000;
+  --red: #FB565A;
+  --chinabar: #E74246;
+  --valencia: #D7373B;
+  --caribbean-green: #00CA74;
+  --jade: #00BC6C;
+  --dark-jade: #00AA62;
+  --ronchi: #EFC849;
+  --tulip-tree: #EAB534;
+  --fire-bush: #E5A722;
+  --gallery: #EEEEEE;
+  --alto: #DFDFDF;
+  --gray: #DFDFDF;
+  --white: #ffffff;
+}
+
+/* Global */
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+

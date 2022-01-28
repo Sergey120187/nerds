@@ -7,15 +7,17 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
-  <body>
 
+  <body>
     <header class="main-header">
-      <nav>
-        <a class="logo">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
         </a>
-        <ul class="header-menu">
+        <ul class="site-navigation">
           <li>
             <a href="blank.html">Студия</a> 
           </li>
@@ -29,60 +31,60 @@
             <a href="blank.html">Контакты</a> 
           </li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a class="basket-link" href="blank.html">Корзина</a>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1>Интернет магазин «Nёrds»</h1> 
 
       <section class="slider">
         <h2>Промо</h2>
-        <div class="slide1">
-          <p>Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн<br>
+        <div class="slide">
+          <p class="slide-slogan">Долго, дорого, скрупулезно.</p>
+          <p class="slide-text">Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <!-- <img src="img/slide1.png" width="760" height="431" alt="Картинка к слайду 1"> -->
         </div>
-        <div class="slide2">
-          <p>Любим математику<br>
+        <div class="slide">
+          <p class="slide-slogan">Любим математику<br>
             как никто другой</p>
-          <p>Никакого креатива, только математические формулы<br>
+          <p class="slide-text">Никакого креатива, только математические формулы<br>
             для расчета идеальных пропорций</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <!-- <img src="img/slide2.png" width="760" height="431" alt="Картинка к слайду 2"> -->
         </div>
-        <div class="slide3">
-          <p>Только ночь,<br>
+        <div class="slide">
+          <p class="slide-slogan">Только ночь,<br>
           только хардкор</p>
-          <p>Работать днем, как все? Мы против этого.<br>
+          <p class="slide-text">Работать днем, как все? Мы против этого.<br>
           Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <!-- <img src="img/slide3.png" width="760" height="431" alt="Картинка к слайду 3"> -->
         </div>
       </section>
 
       <section class="services">
         <h2>Услуги</h2>
-        <ul class="cards">
-          <li class="card">
+        <ul class="services-list">
+          <li class="service-item">
             <h3>Веб-сайты</h3>
             <!-- <img src="img/sites.png" width="300" height="146" alt="Сайты"> -->
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="blank.html">Заказать</a> 
+            <a class="button" href="blank.html">Заказать</a> 
           </li>
-          <li class="card">
+          <li class="service-item">
             <h3>Приложения</h3>
             <!-- <img src="img/apps.png" width="300" height="146" alt="Приложения"> -->
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="blank.html">Заказать</a>
+            <a class="button button-green" href="blank.html">Заказать</a>
           </li>
-          <li class="card">
+          <li class="service-item">
             <h3>Презентации</h3>
             <!-- <img src="img/presentations.png" width="300" height="146" alt="Презентации"> -->
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="blank.html">Заказать</a>
+            <a class="button button-yellow" href="blank.html">Заказать</a>
           </li>
         </ul>
       </section>
@@ -91,17 +93,17 @@
 
       <section class="about">
         <h2>О нас</h2>
-        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
+        <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="about-services-text">Выполняем заказы на разработку:</p>
+        <ul class="about-services-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
         
-        <p>С 2004 года любим точность во всем:</p>
-        <dl>
+        <p class="about-descriptoin-text">С 2004 года любим точность во всем:</p>
+        <dl class="about-description-list">
           <dt>146<sup>%</sup></dt>
           <dd>Уровень самоотдачи</dd>
           <dt>100<sup>%</sup></dt>
@@ -115,7 +117,7 @@
 
       <section class="clients">
         <h2>Клиенты</h2>
-        <ul class="clients">
+        <ul class="clients-list">
           <li>
             <a class="logo-clients" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/partners/logo_htmlacademy.png" width="199" height="57" alt="Логотип HTML Academy">
@@ -143,55 +145,55 @@
     <!-- Здесь будет полоска -->
 
     <footer class="main-footer">
-      <section class="contacts">
+      <section class="footer-contacts">
         <h2>Контакты</h2>
-        <p>Nёrds design studio</p>
+        <p class="footer-contacts-caption">Nёrds design studio</p>
         <p>
           наб. Реки Карповки,<br>
           5 лит П, Санкт-Петербург
         <p>
         <address>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-          <a href="blank.html">Напишите нам</a>
+          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="button" href="blank.html">Напишите нам</a>
         </address>
       </section>
-      <section class="socials">
+      <section class="footer-socials">
         <h2>Социальные сети</h2>
         <ul class="socials-list">
           <li>
-            <a href="#">ВКонтакте</a>
+            <a class="social-button" href="#">ВКонтакте</a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a class="social-button" href="#">Facebook</a>
           </li>
           <li>
-            <a href="#">Instagram
+            <a class="social-button" href="#">Instagram
             </a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
+        <p class="footer-socials-slogan">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
     </footer>
 
-    <section>
-      <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
+    <section class="popup">
+      <h2 class="popup-title">Напишите нам</h2>
+      <button class="popup-btn-close" type="button">Закрыть</button>
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>Ваше имя:
-            <input type="text" name="name" placeholder="Иия Фамилия">
+          <label class="popup-form-label">Ваше имя:
+            <input class="popup-input-text" type="text" name="name" placeholder="Иия Фамилия">
           </label>
-          <label>Ваш e-mail:
-            <input type="email" name="e-mail" placeholder="email@example.com ">
+          <label class="popup-form-label">Ваш e-mail:
+            <input class="popup-input-text" type="email" name="e-mail" placeholder="email@example.com ">
           </label>
         </p>
         <p>
-          <label>Текст письма:
-            <textarea name="text" placeholder="В свободной форме"></textarea>
+          <label class="popup-form-label">Текст письма:
+            <textarea class="popup-input-text popup-input-textarea" name="text" placeholder="В свободной форме"></textarea>
           </label>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
 
