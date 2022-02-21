@@ -75,6 +75,10 @@ a {
   color: #000000;
 }
 
+.site-navigation {
+  list-style: none;
+}
+
 .main-navigation a:hover {
   color: var(--chinabar);
 }
@@ -85,10 +89,3 @@ a {
   opacity: 0.3;
 }
 
-/* .main-navigation img:hover {
-  opacity: 0.3;
-} */
-
-.site-navigation {
-  list-style: none;
-}
