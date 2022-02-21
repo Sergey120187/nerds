@@ -31,19 +31,20 @@
 
 :root {
   --black: #000000;
-  --red: #FB565A;
-  --chinabar: #E74246;
-  --valencia: #D7373B;
-  --caribbean-green: #00CA74;
-  --jade: #00BC6C;
-  --dark-jade: #00AA62;
-  --ronchi: #EFC849;
-  --tulip-tree: #EAB534;
-  --fire-bush: #E5A722;
-  --gallery: #EEEEEE;
-  --alto: #DFDFDF;
-  --gray: #DFDFDF;
+  --red-100: #FB565A;
+  --red-300: #E74246;
+  --red-500: #D7373B;
+  --green-100: #00CA74;
+  --green-300: #00BC6C;
+  --green-500: #00AA62;
+  --yellow-100: #EFC849;
+  --yellow-300: #EAB534;
+  --yellow-500: #E5A722;
+  --grey-100: #EEEEEE;
+  --grey-300: #DFDFDF;
+  --grey-500: #D5D5D5;
   --white: #ffffff;
+  --white-03: rgba(255,255,255, 0.3);
 }
 
 /* Global */
@@ -60,10 +61,37 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+/* Global classes */
+
+.hidden {
+  display: none;
+}
+
+.button {
+  background-color: var(--red-100);
+  color: var(--white);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.button:hover {
+  background-color: var(--red-300);
+}
+
+.button:active {
+  color: var(--white-03);
+  background-color: var(--red-500);
+}
+
 /* Header */
 
 .main-header {
-  background-color: var(--gallery);
+  background-color: var(--grey-100);
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -71,21 +99,59 @@ a {
   list-style: none;
 }
 
-.main-navigation a {
-  color: #000000;
+.site-navigation-link,
+.basket-link {
+  color: var(--black)
 }
 
 .site-navigation {
   list-style: none;
 }
 
-.main-navigation a:hover {
-  color: var(--chinabar);
+.main-header-logo:hover {
+  opacity: 0.7;
 }
 
-.main-navigation a:active,
-.main-navigation img:hover {
-  color: var(--black);
+.site-navigation-link:hover,
+.basket-link:hover {
+  color: var(--red-100);
+}
+
+.site-navigation-link:active,
+.basket-link:active,
+.main-header-logo:active {
+  color: inherit;
   opacity: 0.3;
 }
 
+/* Slider */
+
+.slide {
+  height: 431px;
+}
+
+.slide-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slide-1 {
+  background: var(--grey-100) url(/img/slide1.png) no-repeat 400px;
+}
+
+.slide-2 {
+  background: var(--grey-100) url(/img/slide2.png) no-repeat 400px;
+}
+
+.slide-3 {
+  background: var(--grey-100) url(/img/slide3.png) no-repeat 400px;
+}
+
+/* Services */
+
+.service-caption {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
