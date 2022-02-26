@@ -42,7 +42,10 @@
   --yellow-500: #E5A722;
   --grey-100: #EEEEEE;
   --grey-300: #DFDFDF;
+  --grey-400: #E1E1E1;
   --grey-500: #D5D5D5;
+  --grey-800: #666666;
+  --grey-900: #444444;
   --white: #ffffff;
   --white-03: rgba(255,255,255, 0.3);
 }
@@ -78,16 +81,33 @@ ul {
   text-transform: uppercase;
   padding: 15px;
 }
-
 .button:hover {
   background-color: var(--red-300);
 }
-
 .button:active {
   color: var(--white-03);
   background-color: var(--red-500);
 }
 
+.button-green {
+  background-color: var(--green-100);
+}
+.button-green:hover {
+  background-color: var(--green-300);
+}
+.button-green:active {
+  background-color: var(--green-500);
+}
+
+.button-yellow {
+  background-color: var(--yellow-100);
+}
+.button-yellow:hover {
+  background-color: var(--yellow-300);
+}
+.button-yellow:active{
+  background-color: var(--yellow-500);
+}
 /* Header */
 
 .main-header {
@@ -139,11 +159,9 @@ ul {
 .slide-1 {
   background: var(--grey-100) url(/img/slide1.png) no-repeat 400px;
 }
-
 .slide-2 {
   background: var(--grey-100) url(/img/slide2.png) no-repeat 400px;
 }
-
 .slide-3 {
   background: var(--grey-100) url(/img/slide3.png) no-repeat 400px;
 }
@@ -154,4 +172,65 @@ ul {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* About */
+
+.about-slogan {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.about-services-text,
+.about-description-text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-description-list dt {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+.about-description-list dd {
+  line-height: 18px;
+}
+
+/* Clients */
+
+.logo-clients {
+  opacity: 0.2;
+}
+.logo-clients:hover {
+  opacity: 1;
+}
+.logo-clients:active {
+  opacity: 0.1;
+}
+
+/* Footer */
+
+.footer-caption {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-contacts address,
+.footer-phone {
+  color: var(--grey-800);
+  font-style: normal;
+  line-height: 18px;
+}
+
+.socials-item {
+  background-color: var(--grey-400);
+}
+.footer-slogan {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.footer-text {
+  color: var(--grey-900);
 }
