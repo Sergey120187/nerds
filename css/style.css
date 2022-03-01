@@ -44,6 +44,8 @@
   --grey-300: #DFDFDF;
   --grey-400: #E1E1E1;
   --grey-500: #D5D5D5;
+  --grey-600: #D7DCDE;
+  --grey-700: #B4B9BB;
   --grey-800: #666666;
   --grey-900: #444444;
   --white: #ffffff;
@@ -178,6 +180,7 @@ ul {
 
 .about-slogan {
   font-size: 45px;
+  line-height: 45px;
   font-weight: 500;
 }
 
@@ -223,8 +226,17 @@ ul {
   line-height: 18px;
 }
 
-.socials-item {
+.social-button {
   background-color: var(--grey-400);
+}
+.social-button:hover {
+  background-color: var(--red-300);
+}
+.social-button:active {
+  background-color: var(--red-500);
+}
+.social-img:active {
+  opacity: 0.3;
 }
 .footer-slogan {
   font-size: 36px;
@@ -233,4 +245,22 @@ ul {
 }
 .footer-text {
   color: var(--grey-900);
+}
+
+/* Popup */
+
+.popup {
+  font-weight: 700;
+}
+.popup-title {
+  font-size: 45px;
+}
+.popup-input-text {
+  color: var(--grey-600);
+}
+.popup-input-text:hover {
+  color: var(--grey-700);
+}
+.popup-input-text:focus {
+  color: var(--black);
 }
