@@ -42,14 +42,17 @@
   --yellow-500: #E5A722;
   --grey-100: #EEEEEE;
   --grey-300: #DFDFDF;
+  --grey-350: #DBDBDB;
   --grey-400: #E1E1E1;
   --grey-500: #D5D5D5;
   --grey-600: #D7DCDE;
   --grey-700: #B4B9BB;
   --grey-800: #666666;
+  --grey-850: #4D4D4D;
   --grey-900: #444444;
   --white: #ffffff;
-  --white-03: rgba(255,255,255, 0.3);
+  --white-03: rgba(255,255,255,0.3);
+  --black-03: rgba(0,0,0,0.3);
 }
 
 /* Global */
@@ -64,6 +67,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 ul {
@@ -109,7 +113,25 @@ ul {
 }
 .button-yellow:active{
   background-color: var(--yellow-500);
+  color: var(--white-03);
 }
+
+.button-grey {
+  background-color: var(--grey-100);
+  color: var(--black);
+}
+.button-grey:hover {
+  background-color: var(--grey-300);
+}
+.button-grey:active {
+  background-color: var(--grey-500);
+  color: var(--black-03);
+}
+
+.button-template:active {
+  color: var(--white);
+}
+
 /* Header */
 
 .main-header {
@@ -142,7 +164,6 @@ ul {
 .site-navigation-link:active,
 .basket-link:active,
 .main-header-logo:active {
-  color: inherit;
   opacity: 0.3;
 }
 
@@ -211,7 +232,80 @@ ul {
   opacity: 0.1;
 }
 
+/* Catalog */
+
+.main-title {
+  font-size: 55px;
+  font-weight: 500;
+  background-color: var(--grey-100);
+}
+
+.catalog-subject {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-link {
+  color: var(--black);
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.current-sort,
+.sort-link:active {
+  opacity: 1;
+}
+.sort-link:hover {
+  opacity: 0.6;
+}
+.sort-link:active {
+  opacity: 1;
+}
+
+/* Templates-list */
+
+.browser {
+  background-color: var(--grey-100);
+  width: 359px;
+}
+.browser:hover {
+  background-color: var(--grey-850);
+}
+
+.template-title-link {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.template-title-link:hover {
+  color: var(--red-100);
+}
+.template-title-link:active {
+  color: inherit;
+  opacity: 0.3;
+}
+
+.current-page-templates {
+  background-color: var(--white);
+  border: 1px solid var(--grey-350);
+}
+
 /* Footer */
+
+.footer-contacts {
+  background: url(/img/map.png) no-repeat;
+  height: 416px;
+}
+.marker {
+  background: url(/img/map-marker.png) 847px 70px no-repeat;
+  height: 260px;
+}
+.contacts-cart {
+  background-color: var(--white);
+  width: 319px;
+  height: 308px;
+}
 
 .footer-caption {
   font-size: 18px;
