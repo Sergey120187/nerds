@@ -180,13 +180,13 @@ ul {
 }
 
 .slide-1 {
-  background: var(--grey-100) url(/img/slide1.png) no-repeat 400px;
+  background: var(--grey-100) url(../img/slide1.png) no-repeat 400px;
 }
 .slide-2 {
-  background: var(--grey-100) url(/img/slide2.png) no-repeat 400px;
+  background: var(--grey-100) url(../img/slide2.png) no-repeat 400px;
 }
 .slide-3 {
-  background: var(--grey-100) url(/img/slide3.png) no-repeat 400px;
+  background: var(--grey-100) url(../img/slide3.png) no-repeat 400px;
 }
 
 /* Services */
@@ -294,11 +294,11 @@ ul {
 /* Footer */
 
 .footer-contacts {
-  background: url(/img/map.png) no-repeat;
+  background: url(../img/map.png) no-repeat;
   height: 416px;
 }
 .marker {
-  background: url(/img/map-marker.png) 847px 70px no-repeat;
+  background: url(../img/map-marker.png) 847px 70px no-repeat;
   height: 260px;
 }
 .contacts-cart {
