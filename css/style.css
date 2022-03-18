@@ -80,6 +80,11 @@ ul {
   display: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto; 
+}
+
 .button {
   background-color: var(--red-100);
   color: var(--white);
